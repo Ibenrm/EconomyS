@@ -146,7 +146,11 @@ class EconomyLand extends PluginBase implements Listener{
 			$this->db->save();
 		}
 	}
-
+	
+	public function callDB(){
+		return $this->db;
+	}
+	
 	/**
 	 * @return EconomyLand
 	 */
